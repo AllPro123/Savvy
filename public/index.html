@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Savvy Deploy App</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Deploy-ready starter</p>
+        <h1 id="page-title">Ship your app with confidence.</h1>
+        <p class="lede">
+          Savvy Deploy App includes a Node.js web server, a health endpoint, Docker support,
+          and CI checks so you can run locally or deploy to any container platform.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="/healthz">Check health</a>
+          <a class="button secondary" href="#deploy">View deploy steps</a>
+        </div>
+      </section>
+
+      <section class="cards" aria-label="Deployment features">
+        <article class="card">
+          <span class="icon">✓</span>
+          <h2>Production server</h2>
+          <p>Serves static assets with sensible content types and cache headers.</p>
+        </article>
+        <article class="card">
+          <span class="icon">♡</span>
+          <h2>Health checks</h2>
+          <p>Use <code>/healthz</code> from load balancers, orchestrators, or uptime monitors.</p>
+        </article>
+        <article class="card">
+          <span class="icon">↗</span>
+          <h2>Container ready</h2>
+          <p>Build and run the same artifact locally, in CI, or on your deployment host.</p>
+        </article>
+      </section>
+
+      <section id="deploy" class="panel" aria-labelledby="deploy-title">
+        <h2 id="deploy-title">Deploy commands</h2>
+        <ol>
+          <li><code>npm test</code> to verify the app.</li>
+          <li><code>docker build -t savvy-deploy-app .</code> to build the image.</li>
+          <li><code>docker run -p 3000:3000 savvy-deploy-app</code> to run it anywhere.</li>
+        </ol>
+      </section>
+    </main>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

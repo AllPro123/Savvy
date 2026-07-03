@@ -1,0 +1,21 @@
+{
+  "name": "savvy-deploy-app",
+  "version": "1.0.0",
+  "description": "A small deploy-ready web app with health checks and container support.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "deploy",
+    "node",
+    "docker",
+    "static-site"
+  ],
+  "license": "MIT"
+}
